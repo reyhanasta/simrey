@@ -30,12 +30,12 @@
                             <span>Daftar Pemasukan</span>
                         </a>
                     </li>   
-                    <li <?php if($this->uri->segment(1) == 'wishlist'){ echo 'class="active"';}?>>
+                    <!-- <li <?php if($this->uri->segment(1) == 'wishlist'){ echo 'class="active"';}?>>
                         <a href="<?=site_url('wishlist/index')?>">
                             <i class="material-icons">view_list</i>
                             <span>Wishlist</span>
                         </a>
-                    </li>   
+                    </li>    -->
                     <li class="header">MAIN NAVIGATION</li>
                     <li <?php if ($this->uri->segment(1) == 'admin' AND $this->uri->segment(2) == null){ echo 'class="active"';}?>>
                         <a href="<?= site_url('admin');?>">
@@ -61,6 +61,12 @@
                         <a href="<?= site_url('pengeluaran');?>">
                             <i class="material-icons">folder_shared</i>
                             <span>Jenis Pengeluaran</span>
+                        </a>
+                    </li>
+                    <li <?php if ($this->uri->segment(1) == 'user'){ echo 'class="active"';}?>>
+                        <a href="<?= site_url('user');?>">
+                            <i class="material-icons">folder_shared</i>
+                            <span>User</span>
                         </a>
                     </li>
                         
